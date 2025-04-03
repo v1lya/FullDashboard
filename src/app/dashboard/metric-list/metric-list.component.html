@@ -1,0 +1,7 @@
+<div class="metrics-list">
+  @for (metricData of metricsData(); track metricData.label) {
+    @if (metricData) {
+      <app-metric [metricData]="metricData"/>
+    }
+  }
+</div>

@@ -1,0 +1,19 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem 1.875rem 1rem;
+  border-bottom: 1px solid var(--yellow);
+  background-color: var(--black);
+
+  .brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--yellow);
+    font-size: 1.25em;
+    cursor: pointer;
+  }
+}

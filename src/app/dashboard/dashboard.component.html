@@ -1,0 +1,11 @@
+@let metricsInfo = metricsInfo$ | async;
+@if (metricsInfo) {
+  <div class="metrics-container">
+    <h2>{{ metricsInfo.title }}</h2>
+    <app-metric-list [metricsData]="metricsInfo.datasets" />
+  </div>
+} @else {
+  <mat-spinner />
+}
+
+

@@ -1,0 +1,28 @@
+mat-card {
+  background-color: white;
+
+  mat-card-header {
+    justify-content: center;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+
+  canvas {
+    width: 37.5rem;
+    height: 18.75rem;
+
+    @media screen and (max-width: 1510px) {
+      width: 56.25rem;
+      height: 28.125rem;
+    }
+
+    @media screen and (max-width: 1000px) {
+      width: 37.5rem;
+      height: 18.75rem;
+    }
+
+    @media screen and (max-width: 670px) {
+      width: 20rem;
+      height: 10rem;
+    }
+  }
+}

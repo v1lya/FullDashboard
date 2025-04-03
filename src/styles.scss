@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+$cream: #f7f5ef;
+$yellow: #ffd54f;
+$black: #000000;
+
+:root {
+  --cream: #{$cream};
+  --yellow: #{$yellow};
+  --black: #{$black};
+}
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  background-color: var(--cream);
+}
