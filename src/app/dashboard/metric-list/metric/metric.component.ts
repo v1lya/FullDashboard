@@ -1,4 +1,4 @@
-import {Component, input, signal} from '@angular/core';
+import {ChangeDetectionStrategy, Component, input, signal} from '@angular/core';
 import {BaseChartDirective} from 'ng2-charts';
 import {MatCard, MatCardContent, MatCardHeader, MatCardTitle} from '@angular/material/card';
 import {ChartDataset} from '../metrics.model';
@@ -15,7 +15,8 @@ import {CHART_OPTIONS, LINE_CHART_TYPE} from '../metrics.config';
     MatCardTitle
   ],
   templateUrl: './metric.component.html',
-  styleUrl: './metric.component.scss'
+  styleUrl: './metric.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MetricComponent {
   metricData = input<ChartDataset>();
